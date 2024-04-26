@@ -1,0 +1,18 @@
+{
+	"namesNP": [
+		"कोशी", "मधेश", "बागमती", "गण्डकी", "लुम्बिनी", "कर्णाली", "सुदूरपश्चिम"
+	],
+	"namesEN":[
+			"Koshi", "Madhesh", "Bagmati", "Gandaki", "Lumbini", "Karnali", "Sudurpashchim"
+	],
+	"namesWithData":
+	[
+		{ "nameNP": "कोशी", "nameEN": "Koshi", "numberOfDistricts": 14 },
+		{ "nameNP": "मधेश", "nameEN": "Madhesh", "numberOfDistricts": 8 },
+		{ "nameNP": "बागमती", "nameEN": "Bagmati", "numberOfDistricts": 13 },
+		{ "nameNP": "गण्डकी", "nameEN": "Gandaki", "numberOfDistricts": 11 },
+		{ "nameNP": "लुम्बिनी", "nameEN": "Lumbini", "numberOfDistricts": 12 },
+		{ "nameNP": "कर्णाली", "nameEN": "Karnali", "numberOfDistricts": 10 },
+		{ "nameNP": "सुदूरपश्चिम", "nameEN": "Sudurpashchim", "numberOfDistricts": 9 }
+	]
+}
