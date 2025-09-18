@@ -1,28 +1,77 @@
 # Nepal-And-Nepali
 
-* Nepali words for commonly used words in digital world.
-* Correct and official English words for different places of Nepal.
-* English words for the administrative areas like provinces, districts etc. of Nepal 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Cases
+A definitive, open-source collection of Nepali words, place names, and administrative divisions for developers, data scientists, and content creators.
 
-#### Confused with a place name in Nepali language
-A word from Nepali language can have different spellings in English language so the the idea here is to maintain a list of frequently used Nepali words in computer softwares. This will be act as a single point of reference for those words and play an important role in using them consistently in the digital words.
+---
 
-For example, Koshi is the name of a province in Nepal. How should one write its name in Nepali? 
-कोशि or कोशी or कोसी?
+## 🤔 Why Does This Repository Exist?
 
-#### 
+The Nepali language has many words that can be transliterated into English in multiple ways. This creates inconsistency in digital products, databases, and user interfaces. Furthermore, even within the Nepali script, there can be ambiguity about the official or most common spelling.
 
+A classic example is the name of a province, **Koshi**. Which is the correct Nepali spelling?
 
-# Contribute
+- `कोशि`
+- `कोशी`
+- `कोसी`
 
-You can contribute by creating a pull request with
-* a new word
-* Nepal related new data set
+Without a standard, different applications will store and display this data differently, leading to confusion and data integrity issues. This repository serves as a **single source of truth** to solve that problem.
 
+## 🎯 Our Goal
+
+To create and maintain a high-quality, accurate, and accessible dataset that provides standardized spellings for:
+
+- Nepal's administrative divisions (provinces, districts, municipalities).
+- Commonly used words and phrases in the digital world.
+- Official names of places and landmarks.
+
+## 🗂️ What's Included?
+
+This repository contains data structured for easy use, primarily in JSON format. The core data includes:
+
+- **Administrative Divisions:**
+  - Provinces
+  - Districts
+  - Metropolitan Cities (`महानगरपालिका`)
+  - Sub-Metropolitan Cities (`उप-महानगरपालिका`)
+  - Municipalities (`नगरपालिका`)
+  - Rural Municipalities (`गाउँपालिका`)
+- **Common Digital Terms:** (e.g., "Home" -> `गृह`, "Settings" -> `सेटिङहरू`)
+
+## 🚀 How to Use
+
+You can directly use the JSON files in your projects.
+
+For example, to get a list of districts/municipalities in Bagmati Province, you might parse the `municipalities.json.json` file.
+
+**Example Snippet (`municipalities.json.json`):**
+
+```json
+{
+  "Bagmati": {
+    "province_name_english": "Bagmati",
+    "province_name_nepali": "बागमती",
+    "districts": [
+      {
+        "district_name_english": "Kathmandu",
+        "district_name_nepali": "काठमाडौँ",
+        "municipalities": [
+          // ... list of municipalities in Kathmandu
+        ]
+      },
+      {
+        "district_name_english": "Lalitpur",
+        "district_name_nepali": "ललितपुर",
+        "municipalities": [
+          // ... list of municipalities in Lalitpur
+        ]
+      }
+    ]
+  }
+}
+```
 
 # Links
-Spreadsheet Maintaining Data
 
-https://docs.google.com/spreadsheets/d/1ig3muD9fa02-UNPbKxWaCPCBaSTHnbRKqIqHg7mPWuo/edit
+[Spreadsheet maintaining data](https://docs.google.com/spreadsheets/d/1ig3muD9fa02-UNPbKxWaCPCBaSTHnbRKqIqHg7mPWuo/edit)
